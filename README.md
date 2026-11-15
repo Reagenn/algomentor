@@ -4,12 +4,7 @@
 
 > **Bukan afiliasi LeetCode.** Soal-soal di sini ditulis ulang dengan bahasa sendiri, bukan salinan teks soal LeetCode. Nama "LeetCode" hanya dipakai sebagai deskripsi gaya latihannya.
 >
-> **Rekreasi lokal yang setia, bukan copy persis.** Versi ini dibuat ulang dari nol untuk dijalankan di laptop sendiri, mengikuti fitur versi hosted-nya — bukan salinan byte-for-byte dari file hosted.
-
-## Yang baru di v2.0.0
-
-Struktur source code dirapikan jadi modul-modul kecil yang profesional — tidak ada lagi satu file `server.js` dan satu file `app.js` yang menampung semuanya. Fitur dan API **tetap sama seperti v1**, jadi progres dari v1 tetap bisa dipakai (lihat [Migrasi data dari v1](#migrasi-data-dari-v1)). v2 juga menambahkan `.gitignore` dan `LICENSE` MIT yang belum ada di v1.
-
+> 
 ## Cara menjalankan
 
 Butuh **Node.js 18+**. Tidak ada dependensi npm — tidak perlu `npm install`.
