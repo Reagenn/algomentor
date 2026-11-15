@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #f6f7f9; color: #1c2333; line-height: 1.5; }
+header { background: #14213d; color: #fff; padding: 20px 24px; }
+header h1 { margin: 0; font-size: 28px; }
+header p { margin: 4px 0 0; color: #c9d4e8; }
+header .badge-local { display: inline-block; margin-top: 10px; background: #fca311; color: #14213d; font-weight: 700; font-size: 12px; padding: 4px 10px; border-radius: 999px; }
+header .badge-version { display: inline-block; margin-top: 10px; margin-left: 6px; background: transparent; color: #c9d4e8; border: 1px solid #c9d4e8; font-weight: 700; font-size: 12px; padding: 4px 10px; border-radius: 999px; }
+main { max-width: 980px; margin: 0 auto; padding: 20px 16px 60px; }
+.banner { background: #fff3cd; border: 1px solid #e6c65c; padding: 12px 14px; border-radius: 10px; margin-bottom: 16px; }
+.card { background: #fff; border: 1px solid #e2e6ee; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.progress-bar { height: 12px; background: #e2e6ee; border-radius: 999px; overflow: hidden; }
+.progress-bar > div { height: 100%; background: #2a9d8f; }
+button { cursor: pointer; border: 1px solid #14213d; background: #14213d; color: #fff; border-radius: 8px; padding: 8px 14px; font-size: 14px; }
+button.secondary { background: #fff; color: #14213d; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+button.danger { background: #fff; color: #b3261e; border-color: #b3261e; }
+input, select, textarea { width: 100%; padding: 9px 10px; border: 1px solid #cbd2de; border-radius: 8px; font-size: 14px; font-family: inherit; }
+textarea.code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 13px; min-height: 180px; white-space: pre; }
+pre { background: #14213d; color: #e8eefc; padding: 12px; border-radius: 10px; overflow-x: auto; font-size: 13px; white-space: pre-wrap; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.filters select, .filters input { width: auto; flex: 1; min-width: 140px; }
+.problem-row { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 12px 4px; border-bottom: 1px solid #eef1f5; cursor: pointer; }
+.problem-row:hover { background: #f6f8fb; }
+.pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.pill.Easy { background: #d9f2e3; color: #146c43; }
+.pill.Medium { background: #fff3cd; color: #7a5b00; }
+.pill.Hard { background: #fbdfe0; color: #8f1d22; }
+.done { color: #146c43; font-weight: 700; }
+.hint { border: 1px dashed #8a97ad; border-radius: 10px; padding: 10px 12px; margin: 8px 0; }
+.hint.locked { opacity: .55; }
+.result-pass { color: #146c43; font-weight: 700; }
+.result-fail { color: #8f1d22; font-weight: 700; }
+.tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.tabs button.active { background: #fca311; border-color: #fca311; color: #14213d; }
+small.muted, .muted { color: #5b6678; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }

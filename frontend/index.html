@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlgoMentor — Hints-First Algorithm Practice</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+  <h1>AlgoMentor</h1>
+  <p>Hints-First Algorithm Practice — belajar memecahkan soal, bukan menyalin jawaban</p>
+  <span class="badge-local">Mentor Lokal — bukan AI live</span>
+  <span class="badge-version">v2.0.0</span>
+</header>
+<main>
+  <div id="file-warning" class="banner" style="display:none">
+    <strong>Dibuka lewat file:// — fitur tidak akan jalan.</strong><br>
+    Jalankan dulu <code>node backend/src/server.js</code> dari folder aplikasi, lalu buka <code>http://localhost:3000</code>. Lihat README.md.
+  </div>
+  <script>
+    // Satu-satunya script inline di halaman ini: peringatan file://.
+    // Modul ES (js/main.js) tidak jalan dari file://, jadi cek ini harus
+    // inline agar banner tetap muncul saat file dibuka langsung.
+    if (location.protocol === 'file:') {
+      document.getElementById('file-warning').style.display = 'block';
+    }
+  </script>
+  <div class="banner" id="honest-banner">
+    <strong>Rekreasi lokal, bukan afiliasi LeetCode.</strong> Soal-soal di sini adalah latihan gaya LeetCode (LeetCode-style practice) yang ditulis ulang dengan bahasa sendiri. Mentor di versi lokal ini berbasis hint bawaan soal dan panduan Socratic — <strong>bukan AI live</strong>. <strong>Jalankan Tes hanya mengeksekusi JavaScript</strong>; solusi bahasa lain tampil sebagai referensi.
+  </div>
+
+  <section class="card" id="progress-card">
+    <h2 style="margin-top:0">Progresmu</h2>
+    <div id="progress-text">Memuat…</div>
+    <div class="progress-bar"><div id="progress-fill" style="width:0%"></div></div>
+    <p id="progress-detail" class="muted"></p>
+  </section>
+
+  <div class="tabs">
+    <button id="tab-catalog" class="active">Katalog Soal</button>
+    <button id="tab-custom">Soal Tempelan Saya</button>
+  </div>
+
+  <section id="view-catalog">
+    <div class="card">
+      <div class="filters">
+        <input id="search" placeholder="Cari soal atau pola…">
+        <select id="filter-difficulty"><option value="">Semua tingkat</option><option>Easy</option><option>Medium</option><option>Hard</option></select>
+        <select id="filter-pattern"><option value="">Semua pola</option></select>
+        <select id="filter-status"><option value="">Semua status</option><option value="done">Selesai</option><option value="todo">Belum selesai</option></select>
+      </div>
+      <div id="catalog-list">Memuat katalog…</div>
+    </div>
+    <div id="detail"></div>
+  </section>
+
+  <section id="view-custom" style="display:none">
+    <div class="card">
+      <h2 style="margin-top:0">Tempel Soal Sendiri</h2>
+      <p class="muted">Paste soal dari sumber latihanmu (mis. LeetCode) untuk dibedah dengan template terstruktur. Soal tempelan tersimpan di perangkatmu sendiri.</p>
+      <label>Judul soal<br><input id="custom-title" placeholder="cth. Jumlah Dua Angka — variasi sendiri"></label><br><br>
+      <label>Isi soal (paste di sini)<br><textarea id="custom-desc" rows="6" placeholder="Tulis / paste deskripsi soal, contoh, dan batasannya…"></textarea></label><br><br>
+      <button id="custom-save">Simpan Soal Tempelan</button>
+      <p id="custom-msg" class="muted"></p>
+    </div>
+    <div id="custom-list"></div>
+    <div id="custom-detail"></div>
+  </section>
+</main>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>
